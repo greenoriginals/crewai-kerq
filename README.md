@@ -148,7 +148,7 @@ All three components take the same constructor arguments:
 ## How it works
 
 - **Trust scores** are fetched from `https://kerq.dev/api/tools/{tool_id}/score`
-- **Telemetry** is posted to `https://kerq-mcp.polsia.app/v1/report` with `tool_id`, `status_code`, and `latency_ms`
+- **Telemetry** is posted to the Kerq API with tool_id, status_code, and latency_ms
 - All HTTP calls have a hard 2-second timeout
 - Telemetry is fire-and-forget — never raises, never blocks your agent
 
