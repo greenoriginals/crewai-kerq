@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crewai-kerq"
+version = "0.1.0"
+description = "CrewAI integration for Kerq trust verification — score AI tools before your agents connect."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Kerq", email = "hello@kerq.dev" },
+]
+keywords = ["crewai", "kerq", "trust", "ai-agents", "tool-verification"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "crewai>=0.80.0",
+    "httpx>=0.24.0",
+]
+
+[project.urls]
+Homepage = "https://kerq.dev"
+Documentation = "https://kerq.dev/docs/crewai"
+Repository = "https://github.com/greenoriginals/crewai-kerq"
+Issues = "https://github.com/greenoriginals/crewai-kerq/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
