@@ -13,7 +13,7 @@ import httpx
 logger = logging.getLogger(__name__)
 
 _KERQ_BASE_URL = "https://kerq.dev"
-_TELEMETRY_URL = "https://kerq-mcp.polsia.app/v1/report"
+_TELEMETRY_URL = "https://kerq.dev/api/v1/report"
 _TIMEOUT = 2.0  # seconds — hardcoded, not configurable
 
 
