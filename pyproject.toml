@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "crewai-kerq"
-version = "0.1.0"
+version = "0.1.1"
 description = "CrewAI integration for Kerq trust verification — score AI tools before your agents connect."
 readme = "README.md"
 license = "MIT"
